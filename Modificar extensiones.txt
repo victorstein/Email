@@ -1,0 +1,9 @@
+C:\Email sender\src\utils\directory.js
+
+Siempre despues de modificar CUALQUIER COSA ejecutar
+npm run build
+
+Ejecutar Servidor
+abrir la terminal
+npm start
+enter

@@ -1,0 +1,44 @@
+{
+  "name": "call-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.bundle.js",
+    "build": "webpack",
+    "dev": "webpack | nodemon dist/server.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoGomez092/ElastixAgentReportingTool.git"
+  },
+  "keywords": [
+    "elastix"
+  ],
+  "author": "Gustavo Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GustavoGomez092/ElastixAgentReportingTool/issues"
+  },
+  "homepage": "https://github.com/GustavoGomez092/ElastixAgentReportingTool#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.10",
+    "standard": "^12.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mariadb": "^2.0.3",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^5.1.1",
+    "sequelize": "^5.1.0"
+  }
+}

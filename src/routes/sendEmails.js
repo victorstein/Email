@@ -16,18 +16,18 @@ const sendEmails = (authDb) => {
 		console.log(`La fecha de este reporte es ${date}`)
         let data = await authDb.query(`
           SELECT
-            src as Extension,
+            cnum as Extension,
             cnam as Agent,
-            count(src) as Llamadas,
+            count(cnum) as Llamadas,
             truncate(sum(billsec / 60), 2) as Minutos
           FROM
             asteriskcdrdb.cdr
           WHERE
             calldate like '${date}%'
-              and src like '____'
+              and cnum like '____'
               and dst like '%____%'
-          GROUP BY src
-          ORDER BY src asc
+          GROUP BY cnum
+          ORDER BY cnum asc
         `, {
           type: Sequelize.QueryTypes.SELECT
         })
